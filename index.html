@@ -1,4 +1,78 @@
 <!DOCTYPE HTML>
+<style>
+  .copilot-container {
+      float: center;
+      margin: 20px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .copilot-container a {
+      text-decoration: none;
+      color: #24292f;
+    }
+
+    .copilot-container img {
+      width: 80px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .copilot-container:hover img {
+      transform: scale(1.15) rotate(5deg);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .copilot-label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 5px;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .copilot-container:hover .copilot-label {
+      color: #0a84ff;
+      transform: translateY(-3px) scale(1.05);
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Tooltip styles */
+    .tooltip {
+      visibility: hidden;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 6px 8px;
+      position: absolute;
+      z-index: 1;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+
+    .copilot-container:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Tooltip arrow */
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%; /* bottom of tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+</style>
 <html>
 
 <head>
@@ -14,6 +88,13 @@
 <body class="is-preload">
 
 	<div id="wrapper" class="fade-in">
+<div class="copilot-container">
+    <a href="#LinkedIn">
+      <span class="tooltip"></span>
+      <img src="./images/Git.png" alt="GitHub Copilot" />
+      <span class="copilot-label">Copiot powered tests</span>
+    </a>
+  </div>
 
 		<div id="intro">
 			<h1>Dhruv Kumar's<br />
@@ -118,7 +199,15 @@
 								Profile</a></li>
 					</ul>
 				</article>
-			</section>
+				<article id = "LinkedIn">	
+					<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7342031989463478272?collapsed=1" height="542" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+				</article>
+			
+		<article>	
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7340138334310047745?collapsed=1" height="542" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+		</article>
+			
+		</section>
 
 		</div>
 
